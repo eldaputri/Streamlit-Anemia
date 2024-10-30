@@ -20,5 +20,3 @@ def user_input_features():
   mchc = st.sidebar.number_input("MCHC")
   mcv = st.sidebar.number_input("MCV")
   result = st.sidebar.selectbox("Result"(0, 1))
-df = user_input_features()
-st.write(df)
