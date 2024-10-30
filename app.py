@@ -13,7 +13,7 @@ st.sidebar.header("Input Parameter")
 def user_input_features():
   gender = st.sidebar.selectbox("Gender"(0, 1))
   hemogolobin = st.number_input("Hemogologi")
-  mch =
-  mchc = 
-  mcv = 
-  result =
+  mch = st.sidebar.number_input("MCH")
+  mchc = st.sidebar.number_input("MCHC")
+  mcv = st.sidebar.number_input("MCV")
+  result = st.sidebar.selectbox("Result", (0, 1))
