@@ -1,7 +1,7 @@
 import pickle
 import streamlit as st
 import pandas as pd
-from sklearn.preprocessing import StandardScaler
+
 
 # Judul Aplikasi
 st.title("Aplikasi Prediksi Penyakit Anemia")
