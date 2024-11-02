@@ -9,10 +9,10 @@ st.title("Aplikasi Prediksi Penyakit Anemia")
 # Memuat Model
 # Pastikan Anda memiliki file model yang tersimpan sebagai 'model.pkl'
 try:
-    with open("model.pkl", "rb") as file:
+    with open("model.sav", "rb") as file:
         model = pickle.load(file)
 except FileNotFoundError:
-    st.error("Model file not found. Make sure 'model.pkl' is in the directory.")
+    st.error("Model file not found. Make sure 'model.sav' is in the directory.")
 
 # Input Data
 st.sidebar.header("Input Parameter")
