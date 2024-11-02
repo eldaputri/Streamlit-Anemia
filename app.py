@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from sklearn.naive_bayes import BernoulliNB
-from sklearn.preprocessing import StandardScaler
+
 import pickle
 
 # Judul Aplikasi
@@ -41,9 +41,7 @@ def user_input_features():
 # Menyiapkan input fitur dari pengguna
 input_df = user_input_features()
 
-# Preprocessing: Standarisasi
-scaler = StandardScaler()
-input_scaled = scaler.fit_transform(input_df)
+
 
 # Prediksi
 if st.button("Prediksi"):
