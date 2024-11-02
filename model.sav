@@ -1,0 +1,3 @@
+import pickle
+with open("model.sav", "wb") as file:
+    pickle.dump(model, file)
