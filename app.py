@@ -38,9 +38,6 @@ def user_input_features():
 # Menyiapkan input fitur dari pengguna
 input_df = user_input_features()
 
-# Preprocessing: Standarisasi
-scaler = StandardScaler()
-input_scaled = scaler.fit_transform(input_df)
 
 # Prediksi
 if st.button("Prediksi"):
