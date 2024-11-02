@@ -1,0 +1,5 @@
+import pickle
+
+# Misalnya model Anda adalah `naive_bayes_model`
+with open("naive_bayes_model.pkl", "wb") as file:
+    pickle.dump(naive_bayes_model, file)
